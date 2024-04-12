@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r6tk1jf0x$)%+q+4tj=rg_-__xg)2r-k0exjgts5@#919a&nf%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.josatel.cl','josatel.cl','htpps://www.josatel.cl']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -115,7 +116,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL="/static/"
+MEDIA_URL='/media/'
+STATICFILES_DIRS = [
+    '/home2/josatel1/josatel/core/static',
+]
+STATIC_ROOT='/home2/josatel1/public_html/static'
+MEDIA_ROOT='/home2/josatel1/public_html/media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
