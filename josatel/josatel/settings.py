@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r6tk1jf0x$)%+q+4tj=rg_-__xg)2r-k0exjgts5@#919a&nf%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.josatel.cl','josatel.cl','htpps://www.josatel.cl']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.josatel.cl','josatel.cl','htpps://www.josatel.cl']
 
 
 # Application definition
